@@ -5,6 +5,7 @@
 > [!NOTE]
 > 本插件为非官方工具，与智谱 AI (Zhipu AI) 没有任何关联。
 > 本插件通过调用 GLM 监控 API 获取配额信息。
+> 本插件基于[AntigravityQuotaWatcher](https://github.com/wusimpl/AntigravityQuotaWatcher)二次开发而成。
 
 **一个在 VS Code 状态栏实时显示 GLM Coding Plan 使用配额的插件。**
 

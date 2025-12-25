@@ -3,6 +3,7 @@
 > [!NOTE]
 > This plugin is an unofficial tool and has no affiliation with Zhipu AI.
 > This plugin fetches quota information by calling the GLM monitoring API.
+> This plugin is developed based on [AntigravityQuotaWatcher](https://github.com/wusimpl/AntigravityQuotaWatcher).
 
 **A VS Code extension that displays GLM Coding Plan usage quota in real-time on the status bar.**
 
