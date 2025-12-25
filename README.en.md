@@ -46,6 +46,30 @@
 
 ## Installation
 
+### Environment Variables Configuration
+
+Refer to the official documentation: [Configure Environment Variables](https://docs.bigmodel.cn/cn/coding-plan/tool/claude#%E6%AD%A5%E9%AA%A4%E4%BA%8C%EF%BC%9A%E9%85%8D%E7%BD%AE-glm-coding-plan)
+
+Set system environment variables using Windows CMD:
+
+```cmd
+:: Set authentication token
+setx ANTHROPIC_AUTH_TOKEN "Your authentication token"
+
+:: Set API base URL (choose one)
+setx ANTHROPIC_BASE_URL "https://open.bigmodel.cn"
+REM or
+REM setx ANTHROPIC_BASE_URL "https://api.z.ai"
+```
+
+**Note**: Environment variables set with `setx` are permanent. You need to **restart VS Code** for the changes to take effect.
+
+Verify the environment variables:
+```cmd
+echo %ANTHROPIC_AUTH_TOKEN%
+echo %ANTHROPIC_BASE_URL%
+```
+
 ### Method 1: Manual Installation
 
 1. Download the latest `.vsix` file

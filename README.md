@@ -1,13 +1,11 @@
-# <img src="./icon.png" width="80" style="vertical-align: middle"> GLM Quota Watcher
+# <img src="./icon.png" width="40" style="vertical-align: middle"> GLM Quota Watcher
 
 #### Choose Your Language:  [English](./README.en.md) | 简体中文
 
 > [!NOTE]
-> 本插件为非官方工具，与智谱 AI (Zhipu AI) 没有任何关联。
-
-> 本插件通过调用 GLM 监控 API 获取配额信息。
-
-> 本插件基于[AntigravityQuotaWatcher](https://github.com/wusimpl/AntigravityQuotaWatcher)二次开发而成。
+> 本插件为非官方工具，与智谱 AI (Zhipu AI) 没有任何关联。  
+> 本插件通过调用 GLM 监控 API 获取配额信息。  
+> 本插件基于[AntigravityQuotaWatcher](https://github.com/wusimpl/AntigravityQuotaWatcher)二次开发而成。   
 
 **一个在 VS Code 状态栏实时显示 GLM Coding Plan 使用配额的插件。**
 ## 演示
@@ -46,6 +44,30 @@
 ![VS Code](https://img.shields.io/badge/VS%20Code-1.85%2B-blue?logo=visualstudiocode&logoColor=white)
 
 ## 安装配置
+
+### 环境变量配置
+
+可参考官方设置方式：[配置环境变量](https://docs.bigmodel.cn/cn/coding-plan/tool/claude#%E6%AD%A5%E9%AA%A4%E4%BA%8C%EF%BC%9A%E9%85%8D%E7%BD%AE-glm-coding-plan)
+
+使用 Windows CMD 设置系统环境变量：
+
+```cmd
+:: 设置认证 Token
+setx ANTHROPIC_AUTH_TOKEN "你的认证Token"
+
+:: 设置 API 基础 URL（选择其中一个）
+setx ANTHROPIC_BASE_URL "https://open.bigmodel.cn"
+REM 或者
+REM setx ANTHROPIC_BASE_URL "https://api.z.ai"
+```
+
+**注意**：使用 `setx` 命令设置的环境变量是永久性的，需要**重启 VS Code** 才能生效。
+
+验证环境变量是否设置成功：
+```cmd
+echo %ANTHROPIC_AUTH_TOKEN%
+echo %ANTHROPIC_BASE_URL%
+```
 
 ### 方法一：手动安装
 
