@@ -93,26 +93,6 @@ npm run compile
 # 在 VS Code 中按 F5 启动调试模式
 ```
 
-### 环境变量配置
-
-插件需要设置以下环境变量才能正常工作：
-
-1. 打开 VS Code 设置（`文件` > `首选项` > `设置`）
-2. 搜索 `terminal.integrated.env.windows`（Windows）或 `terminal.integrated.env.osx`（macOS）/ `terminal.integrated.env.linux`（Linux）
-3. 添加以下环境变量：
-
-```json
-{
-  "terminal.integrated.env.windows": {
-    "ANTHROPIC_AUTH_TOKEN": "你的认证Token",
-    "ANTHROPIC_BASE_URL": "https://open.bigmodel.cn" 或 "https://api.z.ai"
-  }
-}
-```
-
-> [!IMPORTANT]
-> 重启 VS Code 以使环境变量生效
-
 ## 配置选项
 
 打开 VS Code 设置（`文件` > `首选项` > `设置`），搜索 `GLM Quota Watcher`：

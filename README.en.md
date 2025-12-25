@@ -94,26 +94,6 @@ npm run compile
 # Press F5 in VS Code to launch debug mode
 ```
 
-### Environment Variables Configuration
-
-The extension requires the following environment variables to work properly:
-
-1. Open VS Code Settings (`File` > `Preferences` > `Settings`)
-2. Search for `terminal.integrated.env.windows` (Windows) or `terminal.integrated.env.osx` (macOS) / `terminal.integrated.env.linux` (Linux)
-3. Add the following environment variables:
-
-```json
-{
-  "terminal.integrated.env.windows": {
-    "ANTHROPIC_AUTH_TOKEN": "Your authentication token",
-    "ANTHROPIC_BASE_URL": "https://open.bigmodel.cn" or "https://api.z.ai"
-  }
-}
-```
-
-> [!IMPORTANT]
-> Restart VS Code for the environment variables to take effect
-
 ## Configuration Options
 
 Open VS Code Settings (`File` > `Preferences` > `Settings`), search for `GLM Quota Watcher`:
