@@ -1,0 +1,122 @@
+{
+  "name": "glm-quota-watcher",
+  "displayName": "GLM Quota Watcher",
+  "description": "实时监控 GLM Coding Plan 的使用配额",
+  "version": "1.0.0",
+  "publisher": "glm-tools",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "glmQuotaWatcher.refreshQuota",
+        "title": "%command.refreshQuota%"
+      }
+    ],
+    "configuration": {
+      "title": "GLM Quota Watcher",
+      "properties": {
+        "glmQuotaWatcher.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "%config.enabled%",
+          "order": 10
+        },
+        "glmQuotaWatcher.pollingInterval": {
+          "type": "number",
+          "default": 600,
+          "minimum": 60,
+          "description": "%config.pollingInterval%",
+          "order": 20
+        },
+        "glmQuotaWatcher.displayStyle": {
+          "type": "string",
+          "default": "percentage",
+          "enum": [
+            "percentage",
+            "progressBar",
+            "dots"
+          ],
+          "enumDescriptions": [
+            "Show percentage / 显示百分比 (e.g. 🟢 GLM: 85%)",
+            "Show progress bar / 显示方块进度条 (e.g. 🟢 GLM ███████░)",
+            "Show dots / 显示圆点进度条 (e.g. 🟢 GLM ●●●●○)"
+          ],
+          "description": "%config.displayStyle%",
+          "order": 30
+        },
+        "glmQuotaWatcher.warningThreshold": {
+          "type": "number",
+          "default": 50,
+          "description": "%config.warningThreshold%",
+          "order": 40
+        },
+        "glmQuotaWatcher.criticalThreshold": {
+          "type": "number",
+          "default": 30,
+          "description": "%config.criticalThreshold%",
+          "order": 50
+        },
+        "glmQuotaWatcher.language": {
+          "type": "string",
+          "default": "auto",
+          "enum": [
+            "auto",
+            "en",
+            "zh-cn"
+          ],
+          "enumDescriptions": [
+            "Auto (Based on VS Code language) / 自动 (跟随 VS Code 语言)",
+            "English",
+            "Chinese (Simplified) / 简体中文"
+          ],
+          "description": "%config.language%",
+          "order": 60
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "package": "npx vsce package"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "https": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/user/glm-quota-watcher.git"
+  },
+  "keywords": [
+    "glm",
+    "quota",
+    "monitor",
+    "ai",
+    "zhipu",
+    "z.ai"
+  ],
+  "author": "",
+  "license": "MIT"
+}

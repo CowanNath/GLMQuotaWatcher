@@ -1,0 +1,9 @@
+{
+    "command.refreshQuota": "刷新 GLM 配额",
+    "config.enabled": "启用 GLM 用量监控",
+    "config.pollingInterval": "轮询间隔（秒）",
+    "config.displayStyle": "状态栏显示样式",
+    "config.warningThreshold": "警告阈值 (%)",
+    "config.criticalThreshold": "临界阈值 (%)",
+    "config.language": "Language / 语言"
+}

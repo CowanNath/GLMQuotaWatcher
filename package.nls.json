@@ -1,0 +1,9 @@
+{
+    "command.refreshQuota": "Refresh GLM Quota",
+    "config.enabled": "Enable GLM usage monitoring",
+    "config.pollingInterval": "Polling interval (seconds)",
+    "config.displayStyle": "Status bar display style",
+    "config.warningThreshold": "Warning threshold (%)",
+    "config.criticalThreshold": "Critical threshold (%)",
+    "config.language": "Language / 语言"
+}
