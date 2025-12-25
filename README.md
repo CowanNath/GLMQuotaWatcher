@@ -1,4 +1,4 @@
-# <img src="./icon.png" width="30" style="vertical-align: middle"> GLM Quota Watcher
+# <img src="./icon.png" width="40" style="vertical-align: middle"> GLM Quota Watcher
 
 #### Choose Your Language:  [English](./README.en.md) | 简体中文
 
