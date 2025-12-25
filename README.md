@@ -4,10 +4,30 @@
 
 > [!NOTE]
 > 本插件为非官方工具，与智谱 AI (Zhipu AI) 没有任何关联。
+
 > 本插件通过调用 GLM 监控 API 获取配额信息。
+
 > 本插件基于[AntigravityQuotaWatcher](https://github.com/wusimpl/AntigravityQuotaWatcher)二次开发而成。
 
 **一个在 VS Code 状态栏实时显示 GLM Coding Plan 使用配额的插件。**
+## 演示
+
+<table>
+  <tr>
+    <td align="center">
+      <strong>状态栏显示</strong><br><br>
+      <img src="https://raw.githubusercontent.com/CowanNath/GLMQuotaWatcher/main/images/demo1.png" alt="状态栏显示" width="300">
+    </td>
+    <td align="center">
+      <strong>配额详情</strong><br><br>
+      <img src="https://raw.githubusercontent.com/CowanNath/GLMQuotaWatcher/main/images/demo2.png" alt="配额详情" width="400">
+    </td>
+    <td align="center">
+      <strong>配置页面</strong><br><br>
+      <img src="https://raw.githubusercontent.com/CowanNath/GLMQuotaWatcher/main/images/demo3.png" alt="配置页面" width="400">
+    </td>
+  </tr>
+</table>
 
 ## 功能特点
 
@@ -39,7 +59,7 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/user/glm-quota-watcher.git
+git clone https://github.com/CowanNath/GLMQuotaWatcher.git
 cd glm-quota-watcher
 
 # 安装依赖
@@ -63,7 +83,7 @@ npm run compile
 {
   "terminal.integrated.env.windows": {
     "ANTHROPIC_AUTH_TOKEN": "你的认证Token",
-    "ANTHROPIC_BASE_URL": "https://api.z.ai" 或 "https://open.bigmodel.cn"
+    "ANTHROPIC_BASE_URL": "https://open.bigmodel.cn" 或 "https://api.z.ai"
   }
 }
 ```

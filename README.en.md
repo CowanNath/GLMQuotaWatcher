@@ -1,11 +1,32 @@
 # <img src="./icon.png" width="80" style="vertical-align: middle"> GLM Quota Watcher
 
+#### Choose Your Language:  English | [简体中文](./README.md)
+
 > [!NOTE]
 > This plugin is an unofficial tool and has no affiliation with Zhipu AI.
 > This plugin fetches quota information by calling the GLM monitoring API.
 > This plugin is developed based on [AntigravityQuotaWatcher](https://github.com/wusimpl/AntigravityQuotaWatcher).
 
 **A VS Code extension that displays GLM Coding Plan usage quota in real-time on the status bar.**
+
+## Demo
+
+<table>
+  <tr>
+    <td align="center">
+      <strong>Status Bar Display</strong><br><br>
+      <img src="https://raw.githubusercontent.com/CowanNath/GLMQuotaWatcher/main/images/demo1.png" alt="Status Bar Display" width="300">
+    </td>
+    <td align="center">
+      <strong>Quota Details</strong><br><br>
+      <img src="https://raw.githubusercontent.com/CowanNath/GLMQuotaWatcher/main/images/demo2.png" alt="Quota Details" width="400">
+    </td>
+    <td align="center">
+      <strong>Config Page</strong><br><br>
+      <img src="https://raw.githubusercontent.com/CowanNath/GLMQuotaWatcher/main/images/demo3.png" alt="Config Page" width="400">
+    </td>
+  </tr>
+</table>
 
 ## Features
 
@@ -37,7 +58,7 @@
 
 ```bash
 # Clone the project
-git clone https://github.com/user/glm-quota-watcher.git
+git clone https://github.com/CowanNath/GLMQuotaWatcher.git
 cd glm-quota-watcher
 
 # Install dependencies
@@ -61,7 +82,7 @@ The extension requires the following environment variables to work properly:
 {
   "terminal.integrated.env.windows": {
     "ANTHROPIC_AUTH_TOKEN": "Your authentication token",
-    "ANTHROPIC_BASE_URL": "https://api.z.ai" or "https://open.bigmodel.cn"
+    "ANTHROPIC_BASE_URL": "https://open.bigmodel.cn" or "https://api.z.ai"
   }
 }
 ```
@@ -182,7 +203,7 @@ npm run test
 This project is open-sourced under the MIT License. Please comply with the open-source license when using this project.
 In addition, we hope you are aware of the following additional notes when using the code:
 
-1. When packaging or redistributing, **please retain the source attribution**: [https://github.com/user/glm-quota-watcher](https://github.com/user/glm-quota-watcher)
+1. When packaging or redistributing, **please retain the source attribution**: [https://github.com/CowanNath/GLMQuotaWatcher](https://github.com/CowanNath/GLMQuotaWatcher)
 2. Please do not use for commercial purposes. Use the code legally and compliantly.
 3. If the open-source license changes, it will be updated in this GitHub repository without separate notice.
 
